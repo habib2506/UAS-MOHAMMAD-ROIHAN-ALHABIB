@@ -1,0 +1,15 @@
+:root {
+    --navy : #d52506;
+    --gold : #d42a82;
+}
+.navbar-brand-icon {color: var(--gold)}
+.navbar-link-page { position: relative;}
+.navbar-link-page::after {
+    content: '';
+    position: absolute; left: 8px; right: 8px; bottom: 0; height: 2px; background: var(--gold);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform .25s ease; 
+    
+}
+.nav-link-page.active::after {transform: scaleX(1);}
+.nav-link-page.hover::after {transform: scaleX(1);}
