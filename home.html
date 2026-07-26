@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RCRD COFFEE</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:rgba(15,15,15,.95);
+    backdrop-filter:blur(10px);
+    transition:.3s;
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+    color:#d4a373 !important;
+    letter-spacing:2px;
+}
+
+.nav-link{
+    color:#fff !important;
+    font-weight:500;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#d4a373 !important;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("foto7.jpeg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:75px;
+    font-weight:700;
+    color:#d4a373;
+    letter-spacing:4px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#ddd;
+    margin:25px 0;
+}
+
+.hero .btn{
+    background:#d4a373;
+    color:#111;
+    border:none;
+    padding:15px 45px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.hero .btn:hover{
+    background:#b37a46;
+    color:#fff;
+    transform:translateY(-5px);
+}
+
+/* ================= SECTION ================= */
+
+section{
+    padding:90px 0;
+}
+
+.title{
+    color:#d4a373;
+    font-weight:700;
+    text-align:center;
+    margin-bottom:50px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="home.html">
+☕ RCRD COFFEE
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link active" href="home.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="produk.html">Menu</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="tentang.html">Tentang</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="galeri.html">Galeri</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="kontak.html">Kontak</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>RCRD COFFEE</h1>
+
+<p>
+Tempat terbaik untuk menikmati kopi premium, makanan lezat,
+dan suasana industrial modern yang nyaman untuk bekerja,
+berdiskusi, maupun bersantai bersama teman.
+</p>
+
+<a href="produk.html" class="btn btn-lg">
+Lihat Menu
+</a>
+
+</div>
+
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+<!-- ================= CSS MENU BEST SELLER ================= -->
+
+<style>
+
+/* ================= MENU ================= */
+
+.menu{
+    background:#181818;
+    padding:90px 0;
+}
+
+.menu .card{
+    background:#222;
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    color:#fff;
+    transition:.4s;
+    height:100%;
+}
+
+.menu .card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(212,163,115,.35);
+}
+
+.menu img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.menu .card-body{
+    padding:25px;
+}
+
+.menu h4{
+    color:#d4a373;
+    font-weight:600;
+}
+
+.menu p{
+    color:#ccc;
+}
+
+.badge-best{
+    display:inline-block;
+    background:#d4a373;
+    color:#111;
+    padding:6px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.price{
+    color:#d4a373;
+    font-size:24px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.menu .btn{
+    width:100%;
+    background:#d4a373;
+    color:#111;
+    border:none;
+    border-radius:30px;
+    padding:12px;
+    font-weight:600;
+}
+
+.menu .btn:hover{
+    background:#b37a46;
+    color:#fff;
+}
+
+</style>
+
+<!-- ================= MENU BEST SELLER ================= -->
+
+<section class="menu">
+
+<div class="container">
+
+<h2 class="title">
+☕ Best Seller Menu
+</h2>
+
+<div class="row g-4">
+
+<!-- CARD 1 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card">
+
+<img src="coffe.jpeg" alt="Americano">
+
+<div class="card-body">
+
+<span class="badge-best">
+Best Seller
+</span>
+
+<h4 class="mt-3">
+Americano
+</h4>
+
+<p>
+Espresso murni dengan aroma kuat dan cita rasa khas untuk pecinta kopi sejati.
+</p>
+
+<div class="price">
+Rp25.000
+</div>
+
+<a href="#" class="btn">
+Pesan Sekarang
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card">
+
+<img src="latte.jpeg" alt="Caramel Latte">
+
+<div class="card-body">
+
+<span class="badge-best">
+Favorite
+</span>
+
+<h4 class="mt-3">
+Caramel Latte
+</h4>
+
+<p>
+Perpaduan espresso, susu segar, dan karamel premium dengan rasa yang creamy.
+</p>
+
+<div class="price">
+Rp30.000
+</div>
+
+<a href="#" class="btn">
+Pesan Sekarang
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card">
+
+<img src="Mocha.jpg" alt="Mocha Coffee">
+
+<div class="card-body">
+
+<span class="badge-best">
+Premium
+</span>
+
+<h4 class="mt-3">
+Mocha Coffee
+</h4>
+
+<p>
+Perpaduan espresso dan cokelat premium dengan rasa manis yang seimbang.
+</p>
+
+<div class="price">
+Rp32.000
+</div>
+
+<a href="#" class="btn">
+Pesan Sekarang
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= CSS ABOUT + KEUNGGULAN + STATISTIK ================= -->
+
+<style>
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:#111;
+    padding:90px 0;
+}
+
+.about-box{
+    background:#1f1f1f;
+    border-radius:25px;
+    padding:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.about-box h2{
+    color:#d4a373;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.about-box p{
+    color:#d9d9d9;
+    line-height:1.9;
+    font-size:17px;
+}
+
+/* ================= KEUNGGULAN ================= */
+
+.feature{
+    background:#181818;
+    padding:90px 0;
+}
+
+.feature-box{
+    background:#222;
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.4s;
+    height:100%;
+}
+
+.feature-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 30px rgba(212,163,115,.3);
+}
+
+.feature-box i{
+    font-size:55px;
+    color:#d4a373;
+    margin-bottom:20px;
+}
+
+.feature-box h4{
+    color:#fff;
+    margin-bottom:15px;
+}
+
+.feature-box p{
+    color:#cfcfcf;
+}
+
+/* ================= STATISTIK ================= */
+
+.stats{
+    background:#111;
+    padding:80px 0;
+}
+
+.stat-box{
+    text-align:center;
+    padding:30px;
+}
+
+.stat-box h2{
+    color:#d4a373;
+    font-size:50px;
+    font-weight:700;
+}
+
+.stat-box p{
+    color:#ddd;
+    font-size:18px;
+}
+
+</style>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about">
+
+<div class="container">
+
+<div class="about-box">
+
+<h2>
+Tentang RCRD COFFEE
+</h2>
+
+<p>
+
+RCRD COFFEE adalah coffee shop dengan konsep industrial modern yang
+menghadirkan kopi berkualitas, makanan lezat, serta suasana yang nyaman.
+Tempat ini cocok untuk mengerjakan tugas, meeting, bekerja, maupun
+berkumpul bersama teman dan keluarga sambil menikmati secangkir kopi
+pilihan yang dibuat oleh barista berpengalaman.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= KEUNGGULAN ================= -->
+
+<section class="feature">
+
+<div class="container">
+
+<h2 class="title">
+Kenapa Memilih Kami?
+</h2>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="feature-box">
+
+<i class="bi bi-cup-hot-fill"></i>
+
+<h4>Kopi Premium</h4>
+
+<p>
+Menggunakan biji kopi pilihan dengan kualitas terbaik dan cita rasa yang konsisten.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="feature-box">
+
+<i class="bi bi-wifi"></i>
+
+<h4>Free WiFi</h4>
+
+<p>
+Internet cepat dan stabil, cocok untuk bekerja, belajar, atau meeting online.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="feature-box">
+
+<i class="bi bi-emoji-smile-fill"></i>
+
+<h4>Pelayanan Ramah</h4>
+
+<p>
+Tim kami selalu siap memberikan pelayanan terbaik agar setiap pelanggan merasa nyaman.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATISTIK ================= -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-3">
+
+<div class="stat-box">
+
+<h2>5K+</h2>
+
+<p>Pelanggan Puas</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="stat-box">
+
+<h2>50+</h2>
+
+<p>Menu Pilihan</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="stat-box">
+
+<h2>4.9★</h2>
+
+<p>Rating Pelanggan</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="stat-box">
+
+<h2>2023</h2>
+
+<p>Berdiri Sejak</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= CSS GALERI + TESTIMONI + FOOTER ================= -->
+
+<style>
+
+/* ================= GALERI ================= */
+
+.gallery{
+    background:#181818;
+    padding:90px 0;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 15px 35px rgba(212,163,115,.4);
+}
+
+/* ================= TESTIMONI ================= */
+
+.testimoni{
+    background:#111;
+    padding:90px 0;
+}
+
+.testi-card{
+    background:#222;
+    border-radius:20px;
+    padding:30px;
+    color:#ddd;
+    transition:.4s;
+    height:100%;
+}
+
+.testi-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(212,163,115,.35);
+}
+
+.testi-card i{
+    color:#d4a373;
+    font-size:25px;
+}
+
+.testi-card h5{
+    color:#fff;
+    margin-top:15px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0b0b0b;
+    padding:40px 0;
+    text-align:center;
+    color:#aaa;
+    border-top:1px solid #333;
+}
+
+footer h3{
+    color:#d4a373;
+    margin-bottom:15px;
+}
+
+footer a{
+    color:#d4a373;
+    text-decoration:none;
+    margin:0 10px;
+    font-size:22px;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+/* ================= WHATSAPP ================= */
+
+.wa{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+    transition:.3s;
+}
+
+.wa:hover{
+    transform:scale(1.1);
+    color:#fff;
+}
+
+</style>
+
+<!-- ================= GALERI ================= -->
+
+<section class="gallery">
+
+<div class="container">
+
+<h2 class="title">
+📸 Suasana RCRD COFFEE
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<img src="suasana.jpeg" alt="">
+</div>
+
+<div class="col-md-4">
+<img src="1.jpeg" alt="">
+</div>
+
+<div class="col-md-4">
+<img src="2.jpeg" alt="">
+</div>
+
+<div class="col-md-4">
+<img src="3.jpeg" alt="">
+</div>
+
+<div class="col-md-4">
+<img src="4.jpeg" alt="">
+</div>
+
+<div class="col-md-4">
+<img src="5.jpeg" alt="">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= TESTIMONI ================= -->
+
+<section class="testimoni">
+
+<div class="container">
+
+<h2 class="title">
+⭐ Apa Kata Pelanggan
+</h2>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="testi-card">
+
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+
+<p class="mt-3">
+"Kopinya enak, tempatnya nyaman banget buat nugas dan nongkrong."
+</p>
+
+<h5>- Andi</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="testi-card">
+
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+
+<p class="mt-3">
+"Interiornya keren, pelayanan cepat, dan menu kopinya lengkap."
+</p>
+
+<h5>- Rizky</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="testi-card">
+
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+
+<p class="mt-3">
+"Tempat favorit buat meeting sambil menikmati kopi premium."
+</p>
+
+<h5>- Dimas</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= WHATSAPP ================= -->
+
+<a href="https://wa.me/6281234567890" class="wa">
+<i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<h3>☕ RCRD COFFEE</h3>
+
+<p>
+Good Coffee • Good Friends • Good Moments
+</p>
+
+<div class="mb-3">
+
+<a href="#"><i class="bi bi-instagram"></i></a>
+
+<a href="#"><i class="bi bi-facebook"></i></a>
+
+<a href="#"><i class="bi bi-tiktok"></i></a>
+
+<a href="#"><i class="bi bi-envelope-fill"></i></a>
+
+</div>
+
+<p>
+© 2026 RCRD COFFEE. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

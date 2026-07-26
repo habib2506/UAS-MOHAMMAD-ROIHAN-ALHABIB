@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Produk | RCRD COFFEE</title>
+
+<link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:rgba(15,15,15,.95);
+    box-shadow:0 5px 15px rgba(0,0,0,.5);
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+    color:#d4a373 !important;
+    letter-spacing:2px;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:#d4a373 !important;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:360px;
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url("foto7.jpeg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    color:#d4a373;
+    font-size:60px;
+    font-weight:700;
+}
+
+.hero p{
+    color:#ddd;
+    font-size:20px;
+}
+
+/* ================= TITLE ================= */
+
+.section-title{
+    text-align:center;
+    color:#d4a373;
+    font-weight:bold;
+    margin:70px 0 45px;
+}
+
+/* ================= CARD ================= */
+
+.product-card{
+    background:#1f1f1f;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    margin-bottom:30px;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(212,163,115,.35);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.badge-best{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#d4a373;
+    color:#111;
+    padding:7px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-title{
+    color:#d4a373;
+    font-weight:600;
+}
+
+.product-info p{
+    color:#ccc;
+}
+
+.rating{
+    color:#ffc107;
+    margin:10px 0;
+}
+
+.price{
+    color:#d4a373;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.btn-pesan{
+    width:100%;
+    background:#d4a373;
+    color:#111;
+    border:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-pesan:hover{
+    background:#b37a46;
+    color:#fff;
+}
+
+footer{
+    background:#0b0b0b;
+    color:#bbb;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+<div class="container">
+
+<a class="navbar-brand" href="home.html">
+☕ RCRD COFFEE
+</a>
+
+<button class="navbar-toggler" type="button"
+data-toggle="collapse"
+data-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ml-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="home.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="produk.html">Produk</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="tentang.html">Tentang</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="galeri.html">Galeri</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="kontak.html">Kontak</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>OUR SIGNATURE MENU</h1>
+
+<p>
+Premium Coffee • Fresh Taste • Cozy Place
+</p>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">
+☕ Menu Favorit RCRD COFFEE
+</h2>
+
+<div class="row">
+<!-- ================= CSS MENU ================= -->
+
+<style>
+
+.product-card{
+    background:#1f1f1f;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    margin-bottom:30px;
+    height:100%;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(212,163,115,.35);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.badge-best{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#d4a373;
+    color:#111;
+    padding:7px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-title{
+    color:#d4a373;
+    font-weight:600;
+}
+
+.product-info p{
+    color:#ccc;
+}
+
+.rating{
+    color:#ffc107;
+    margin:10px 0;
+}
+
+.price{
+    color:#d4a373;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.btn-pesan{
+    width:100%;
+    background:#d4a373;
+    color:#111;
+    border:none;
+    border-radius:30px;
+    padding:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-pesan:hover{
+    background:#b37a46;
+    color:#fff;
+}
+
+</style>
+
+<!-- ================= MENU RCRD COFFEE ================= -->
+
+<!-- MENU 1 -->
+<div class="col-lg-4 col-md-6">
+
+<div class="product-card">
+
+<div class="position-relative">
+
+<span class="badge-best">Best Seller</span>
+
+<img src="coffe.jpeg" alt="Americano">
+
+</div>
+
+<div class="product-info">
+
+<h5 class="product-title">Americano</h5>
+
+<p>Espresso murni dengan karakter rasa yang kuat dan aroma khas.</p>
+
+<div class="rating">⭐⭐⭐⭐⭐</div>
+
+<div class="price">Rp25.000</div>
+
+<button class="btn btn-pesan"
+onclick="pesanProduk('Americano')">
+Pesan Sekarang
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MENU 2 -->
+<div class="col-lg-4 col-md-6">
+
+<div class="product-card">
+
+<img src="latte.jpeg" alt="Caramel Latte">
+
+<div class="product-info">
+
+<h5 class="product-title">Caramel Latte</h5>
+
+<p>Espresso, susu segar dan karamel premium yang creamy.</p>
+
+<div class="rating">⭐⭐⭐⭐⭐</div>
+
+<div class="price">Rp30.000</div>
+
+<button class="btn btn-pesan"
+onclick="pesanProduk('Caramel Latte')">
+Pesan Sekarang
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MENU 3 -->
+<div class="col-lg-4 col-md-6">
+
+<div class="product-card">
+
+<div class="position-relative">
+
+<span class="badge-best">Premium</span>
+
+<img src="mocha.jpg" alt="Mocha Coffee">
+
+</div>
+
+<div class="product-info">
+
+<h5 class="product-title">Mocha Coffee</h5>
+
+<p>Perpaduan espresso dan cokelat premium dengan rasa lembut.</p>
+
+<div class="rating">⭐⭐⭐⭐⭐</div>
+
+<div class="price">Rp32.000</div>
+
+<button class="btn btn-pesan"
+onclick="pesanProduk('Mocha Coffee')">
+Pesan Sekarang
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MENU 4 -->
+<div class="col-lg-4 col-md-6">
+
+<div class="product-card">
+
+<img src="foto.jpeg" alt="sunset love">
+
+<div class="product-info">
+
+<h5 class="product-title">Sunset Lover</h5>
+
+<p>Perpaduan orange dengan foam strawberry yang lembut.</p>
+
+<div class="rating">⭐⭐⭐⭐⭐</div>
+
+<div class="price">Rp28.000</div>
+
+<button class="btn btn-pesan"
+onclick="pesanProduk('Cappuccino')">
+Pesan Sekarang
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MENU 5 -->
+<div class="col-lg-4 col-md-6">
+
+<div class="product-card">
+
+<img src="foto5.jpeg" alt="Hazelnut Latte">
+
+<div class="product-info">
+
+<h5 class="product-title">Hazelnut Latte</h5>
+
+<p>Latte premium dengan aroma hazelnut yang khas.</p>
+
+<div class="rating">⭐⭐⭐⭐☆</div>
+
+<div class="price">Rp31.000</div>
+
+<button class="btn btn-pesan"
+onclick="pesanProduk('Hazelnut Latte')">
+Pesan Sekarang
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MENU 6 -->
+<div class="col-lg-4 col-md-6">
+
+<div class="product-card">
+
+<div class="position-relative">
+
+<span class="badge-best">New</span>
+
+<img src="matcha.jpeg" alt="Matcha Latte">
+
+</div>
+
+<div class="product-info">
+
+<h5 class="product-title">Matcha Latte</h5>
+
+<p>Matcha premium dipadukan susu segar dengan rasa creamy.</p>
+
+<div class="rating">⭐⭐⭐⭐⭐</div>
+
+<div class="price">Rp29.000</div>
+
+<button class="btn btn-pesan"
+onclick="pesanProduk('Matcha Latte')">
+Pesan Sekarang
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<!-- ================= CSS POPUP ================= -->
+
+<style>
+
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.75);
+    z-index:9999;
+    justify-content:center;
+    align-items:center;
+}
+
+.popup-box{
+    width:90%;
+    max-width:430px;
+    background:#1f1f1f;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
+}
+
+.popup-header{
+    background:#d4a373;
+    color:#111;
+    padding:18px;
+    text-align:center;
+    position:relative;
+}
+
+.popup-header h3{
+    margin:0;
+    font-weight:700;
+}
+
+.close-popup{
+    position:absolute;
+    right:18px;
+    top:10px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.popup-body{
+    padding:25px;
+}
+
+.popup-body label{
+    display:block;
+    margin-bottom:8px;
+    color:#d4a373;
+    font-weight:600;
+}
+
+.popup-body input,
+.popup-body select{
+    width:100%;
+    padding:12px;
+    margin-bottom:18px;
+    border:1px solid #555;
+    border-radius:10px;
+    background:#2b2b2b;
+    color:#fff;
+}
+
+.popup-body input:focus,
+.popup-body select:focus{
+    border-color:#d4a373;
+    outline:none;
+}
+
+.btn-wa{
+    width:100%;
+    background:#25D366;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    padding:13px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-wa:hover{
+    background:#1ea952;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0b0b0b;
+    color:#bbb;
+    text-align:center;
+    padding:35px 20px;
+    margin-top:70px;
+    border-top:1px solid #333;
+}
+
+footer h3{
+    color:#d4a373;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+</style>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>☕ RCRD COFFEE</h3>
+
+<p>Good Coffee • Good Friends • Good Moments</p>
+
+<p>Jl. Cemara No.9, Suka Maju, kec. Sail, Kota Pekanbaru, Riau, Pekanbaru, 28127</p>
+
+<p>© 2026 RCRD COFFEE. All Rights Reserved.</p>
+
+</footer>
+
+<!-- ================= POPUP ================= -->
+
+<div class="popup" id="popupPesan">
+
+<div class="popup-box">
+
+<div class="popup-header">
+
+<h3>☕ Form Pemesanan</h3>
+
+<span class="close-popup" onclick="tutupPopup()">&times;</span>
+
+</div>
+
+<div class="popup-body">
+
+<input type="hidden" id="produk">
+
+<label>Nama Pemesan</label>
+<input type="text" id="nama" placeholder="Masukkan Nama">
+
+<label>Ukuran</label>
+<select id="ukuran">
+<option>Regular</option>
+<option>Large</option>
+</select>
+
+<label>Level Gula</label>
+<select id="gula">
+<option>Normal</option>
+<option>Less Sugar</option>
+<option>No Sugar</option>
+</select>
+
+<label>Es Batu</label>
+<select id="es">
+<option>Normal Ice</option>
+<option>Less Ice</option>
+<option>No Ice</option>
+</select>
+
+<label>Jumlah</label>
+<input type="number" id="jumlah" value="1" min="1">
+
+<button class="btn-wa" onclick="kirimWA()">
+📲 Pesan via WhatsApp
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function pesanProduk(namaProduk){
+    document.getElementById("produk").value = namaProduk;
+    document.getElementById("popupPesan").style.display = "flex";
+}
+
+function tutupPopup(){
+    document.getElementById("popupPesan").style.display = "none";
+}
+
+window.onclick = function(event){
+    var popup = document.getElementById("popupPesan");
+    if(event.target == popup){
+        tutupPopup();
+    }
+}
+
+function kirimWA(){
+
+    var nama=document.getElementById("nama").value.trim();
+    var produk=document.getElementById("produk").value;
+    var ukuran=document.getElementById("ukuran").value;
+    var gula=document.getElementById("gula").value;
+    var es=document.getElementById("es").value;
+    var jumlah=document.getElementById("jumlah").value;
+
+    if(nama==""){
+        alert("Silakan isi nama terlebih dahulu.");
+        return;
+    }
+
+    var nomor="6283850167019";
+
+    var pesan=
+`Halo RCRD COFFEE ☕
+
+Saya ingin memesan:
+
+👤 Nama : ${nama}
+☕ Produk : ${produk}
+📏 Ukuran : ${ukuran}
+🍬 Level Gula : ${gula}
+🧊 Es : ${es}
+🛒 Jumlah : ${jumlah} Cup
+
+Terima kasih 😊`;
+
+    window.open(
+    "https://wa.me/"+nomor+
+    "?text="+encodeURIComponent(pesan),
+    "_blank"
+    );
+
+    document.getElementById("nama").value="";
+    document.getElementById("jumlah").value=1;
+    document.getElementById("ukuran").selectedIndex=0;
+    document.getElementById("gula").selectedIndex=0;
+    document.getElementById("es").selectedIndex=0;
+
+    tutupPopup();
+
+}
+
+</script>
+
+<script src="bootstrap-4.5.3-dist/js/jquery.min.js"></script>
+<script src="bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kontak | RCRD COFFEE</title>
+
+
+<!-- Bootstrap -->
+
+<link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+
+
+<!-- Google Font -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<!-- Sweet Alert -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+<style>
+
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:#111;
+color:white;
+
+}
+
+
+
+/* ================= NAVBAR ================= */
+
+
+.navbar{
+
+background:#0b0b0b;
+
+box-shadow:
+0 5px 20px rgba(0,0,0,.5);
+
+}
+
+
+.navbar-brand{
+
+font-size:28px;
+
+font-weight:700;
+
+color:#d4a373!important;
+
+letter-spacing:2px;
+
+}
+
+
+
+.nav-link{
+
+color:white!important;
+
+margin-left:15px;
+
+transition:.3s;
+
+}
+
+
+.nav-link:hover,
+.nav-link.active{
+
+color:#d4a373!important;
+
+}
+
+
+
+
+/* ================= HERO ================= */
+
+
+.hero{
+
+
+height:320px;
+
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.75),
+rgba(0,0,0,.75)
+),
+
+url("foto7.jpeg");
+
+
+
+background-size:cover;
+
+background-position:center;
+
+
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+
+
+}
+
+
+
+.hero h1{
+
+
+color:#d4a373;
+
+font-size:50px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+
+}
+
+
+
+.hero p{
+
+
+color:#ddd;
+
+font-size:18px;
+
+
+}
+
+
+
+/* ================= CONTACT CARD ================= */
+
+
+.contact-card{
+
+
+background:#1f1f1f;
+
+border-radius:25px;
+
+padding:40px;
+
+margin-top:-60px;
+
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.5);
+
+
+}
+
+
+
+.section-title{
+
+
+color:#d4a373;
+
+font-weight:700;
+
+margin-bottom:25px;
+
+
+}
+
+
+
+/* ================= FORM ================= */
+
+
+.form-control{
+
+
+background:#2b2b2b;
+
+border:1px solid #555;
+
+color:white;
+
+border-radius:12px;
+
+padding:13px;
+
+
+}
+
+
+.form-control::placeholder{
+
+
+color:#aaa;
+
+
+}
+
+
+.form-control:focus{
+
+
+background:#2b2b2b;
+
+color:white;
+
+border-color:#d4a373;
+
+
+box-shadow:
+
+0 0 10px rgba(212,163,115,.3);
+
+
+}
+
+
+
+.btn-kirim{
+
+
+background:#d4a373;
+
+color:#111;
+
+border:none;
+
+border-radius:30px;
+
+padding:13px;
+
+font-weight:bold;
+
+transition:.3s;
+
+
+}
+
+
+.btn-kirim:hover{
+
+
+background:#b57b45;
+
+color:white;
+
+
+}
+/* ================= INFO KONTAK ================= */
+
+.info-box{
+
+    background:#2a2a2a;
+
+    border-left:5px solid #d4a373;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+}
+
+
+.info-box h5{
+
+    color:#d4a373;
+
+    font-weight:700;
+
+}
+
+
+.info-box p{
+
+    color:#ddd;
+
+    line-height:1.7;
+
+    margin:0;
+
+}
+
+
+
+/* ================= MAP ================= */
+
+
+iframe{
+
+    width:100%;
+
+    height:350px;
+
+    border:0;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+
+<div class="container">
+
+
+<a class="navbar-brand" href="home.html">
+
+☕ RCRD COFFEE
+
+</a>
+
+
+
+<button class="navbar-toggler"
+
+data-toggle="collapse"
+
+data-target="#menu">
+
+
+<span class="navbar-toggler-icon"></span>
+
+
+</button>
+
+
+
+<div class="collapse navbar-collapse" id="menu">
+
+
+<ul class="navbar-nav ml-auto">
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="home.html">
+
+Home
+
+</a>
+
+</li>
+
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="produk.html">
+
+Produk
+
+</a>
+
+</li>
+
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="tentang.html">
+
+Tentang
+
+</a>
+
+</li>
+
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="galeri.html">
+
+Galeri
+
+</a>
+
+</li>
+
+
+
+<li class="nav-item">
+
+<a class="nav-link active" href="kontak.html">
+
+Kontak
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+</nav>
+
+
+
+
+<!-- ================= HERO ================= -->
+
+
+<section class="hero">
+
+
+<div>
+
+
+<h1>
+
+Hubungi RCRD
+
+</h1>
+
+
+<p>
+
+Kami siap melayani dan mendengarkan pesan terbaik dari Anda ☕
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- ================= KONTAK ================= -->
+
+
+<div class="container">
+
+
+<div class="contact-card">
+
+
+<div class="row">
+
+
+
+<!-- INFORMASI -->
+
+
+<div class="col-lg-5 mb-4">
+
+
+<h2 class="section-title">
+
+Kontak RCRD COFFEE
+
+</h2>
+
+
+
+<div class="info-box">
+
+
+<h5>
+📍 Alamat
+</h5>
+
+
+<p>
+
+RCRD COFFEE
+
+<br>
+
+Jl. Cemara No.9, Suka Maju, kec. Sail, Kota Pekanbaru, Riau, Pekanbaru, 28127
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="info-box">
+
+
+<h5>
+📞 WhatsApp
+</h5>
+
+
+<p>
+
++62 822-3618-1554
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="info-box">
+
+
+<h5>
+📧 Email
+</h5>
+
+
+<p>
+
+rcrdcoffee@gmail.com
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="info-box">
+
+
+<h5>
+🕒 Jam Operasional
+</h5>
+
+
+<p>
+
+
+Senin - Kamis
+
+<br>
+
+09.00 - 22.00 WIB
+
+
+<br><br>
+
+
+Jumat - Minggu
+
+<br>
+
+09.00 - 23.00 WIB
+
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- FORM PESAN -->
+
+
+<div class="col-lg-7">
+
+
+<h2 class="section-title">
+
+Kirim Pesan
+
+</h2>
+
+
+
+<form id="formKontak">
+
+
+
+<input
+
+type="text"
+
+id="nama"
+
+class="form-control mb-3"
+
+placeholder="Nama Lengkap"
+
+required>
+
+
+
+<input
+
+type="email"
+
+id="email"
+
+class="form-control mb-3"
+
+placeholder="Email Anda"
+
+required>
+
+
+
+<textarea
+
+id="pesan"
+
+class="form-control mb-3"
+
+rows="5"
+
+placeholder="Tulis pesan untuk RCRD COFFEE..."
+
+required></textarea>
+
+
+
+
+<button
+
+type="submit"
+
+class="btn btn-kirim btn-block">
+
+
+☕ Kirim Pesan
+
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<hr class="my-5">
+
+
+
+<h2 class="text-center section-title">
+
+📍 Lokasi RCRD COFFEE
+
+</h2>
+
+
+
+<iframe
+
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.657084005688!2d101.45966539999999!3d0.5151029000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5afc7de6537a3%3A0x6532ec92d58927f9!2sRCRD%20Coffee!5e0!3m2!1sid!2sid!4v1785057354213!5m2!1sid!2sid">
+
+</iframe>
+
+
+
+</div>
+
+
+</div>
+<!-- ================= FOOTER ================= -->
+
+<style>
+
+footer{
+
+    background:#0b0b0b;
+
+    color:white;
+
+    text-align:center;
+
+    padding:45px 20px;
+
+    margin-top:60px;
+
+    border-top:2px solid #d4a373;
+
+}
+
+
+footer h3{
+
+    color:#d4a373;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+}
+
+
+footer p{
+
+    color:#bbb;
+
+    margin:8px 0;
+
+}
+
+
+
+.social{
+
+    margin:25px 0;
+
+}
+
+
+
+.social a{
+
+    display:inline-block;
+
+    background:#1f1f1f;
+
+    color:#d4a373;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    margin:5px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+
+.social a:hover{
+
+    background:#d4a373;
+
+    color:#111;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+</style>
+
+
+
+<!-- ================= FOOTER RCRD ================= -->
+
+
+<footer>
+
+
+<div class="container">
+
+
+<h3>
+
+☕ RCRD COFFEE
+
+</h3>
+
+
+
+<p>
+
+Good Coffee • Good Friends • Good Moments
+
+</p>
+
+
+
+<p>
+
+📍 Jl. Cemara No.9, Suka Maju, kec. Sail, Kota Pekanbaru, Riau, Pekanbaru, 28127
+
+</p>
+
+
+
+<p>
+
+📞 +62 838-5016-7019
+
+</p>
+
+
+
+<div class="social">
+
+
+<a href="#">
+
+Instagram
+
+</a>
+
+
+<a href="#">
+
+TikTok
+
+</a>
+
+
+<a href="#">
+
+WhatsApp
+
+</a>
+
+
+</div>
+
+
+
+<hr style="border-color:#333;">
+
+
+
+<p>
+
+© 2026 RCRD COFFEE. All Rights Reserved.
+
+</p>
+
+
+
+</div>
+
+
+</footer>
+
+<!-- ================= SWEET ALERT ================= -->
+
+
+<script>
+
+
+document
+.getElementById("formKontak")
+.addEventListener("submit",function(e){
+
+
+e.preventDefault();
+
+
+
+Swal.fire({
+
+
+icon:'success',
+
+
+title:'Pesan Berhasil Dikirim ☕',
+
+
+text:'Terima kasih telah menghubungi RCRD COFFEE. Kami akan segera membalas pesan Anda.',
+
+
+confirmButtonColor:'#d4a373'
+
+
+});
+
+
+
+this.reset();
+
+
+});
+
+
+</script>
+<!-- ================= BOOTSTRAP SCRIPT ================= -->
+
+<script src="bootstrap-4.5.3-dist/js/jquery.min.js"></script>
+
+<script src="bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
